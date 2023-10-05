@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/cover_edit"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="10dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="380dp"
+            android:layout_height="700dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/background"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cover_edit">
+
+            <EditText
+                android:id="@+id/edit_title_book"
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/boder_edit"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:fontFamily="@font/josefin"
+                android:hint="@string/story_title"
+                android:inputType="text"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_author_book"
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/boder_edit"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:fontFamily="@font/josefin"
+                android:hint="@string/author"
+                android:inputType="text"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_title_book" />
+
+            <TextView
+                android:id="@+id/edit_category_book"
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/boder_edit"
+                android:ems="10"
+                android:fontFamily="@font/josefin"
+                android:hint="@string/choose_category"
+                android:padding="16dp"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_author_book" />
+
+            <TextView
+                android:id="@+id/edit_status_book"
+                android:layout_width="320dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/boder_edit"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:fontFamily="@font/josefin"
+                android:hint="@string/choose_status"
+                android:padding="16dp"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_category_book" />
+
+            <EditText
+                android:id="@+id/edit_description_book"
+                android:layout_width="329dp"
+                android:layout_height="350dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/boder_edit_des"
+                android:ems="10"
+                android:fontFamily="@font/josefin"
+                android:hint="@string/story_description"
+                android:inputType="textMultiLine"
+                android:lines="15"
+                android:overScrollMode="always"
+                android:padding="16dp"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_status_book" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

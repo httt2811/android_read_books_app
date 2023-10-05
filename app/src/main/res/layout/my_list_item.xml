@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/frame_book">
+
+
+    <ImageView
+        android:id="@+id/cover4"
+        android:layout_width="397dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/my_list_item"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/book1" />
+
+    <TextView
+        android:id="@+id/mylist_item_title"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:autoSizeMaxTextSize="22sp"
+        android:autoSizeMinTextSize="18sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/josefin"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="@string/harry_potter_v_h_n_t_th_n"
+        android:textColor="@color/nau"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cover4"
+        app:layout_constraintStart_toEndOf="@+id/my_list_item"
+        app:layout_constraintTop_toTopOf="@+id/cover4" />
+
+    <TextView
+        android:id="@+id/mylist_item_author"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeMinTextSize="16sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/ac"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/j_k_rowling"
+        android:textColor="@color/nau"
+        app:layout_constraintEnd_toEndOf="@+id/cover4"
+        app:layout_constraintStart_toEndOf="@+id/my_list_item"
+        app:layout_constraintTop_toBottomOf="@+id/mylist_item_title" />
+
+    <TextView
+        android:id="@+id/mylist_item_score"
+        android:layout_width="108dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/rate"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/ac"
+        android:gravity="center_vertical"
+        android:text="@string/score"
+        android:textColor="@color/nau"
+        android:autoSizeMaxTextSize="14sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/my_list_item"
+        app:layout_constraintTop_toBottomOf="@+id/mylist_item_author"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/mylist_item_status"
+        android:layout_width="134dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/ac"
+        android:gravity="center_vertical"
+        android:text="@string/_7_ch_ng"
+        android:autoSizeMaxTextSize="14sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeStepGranularity="1sp"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/nau"
+        app:layout_constraintBottom_toBottomOf="@+id/cover4"
+        app:layout_constraintStart_toEndOf="@+id/mylist_item_score"
+        app:layout_constraintTop_toBottomOf="@+id/mylist_item_author" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

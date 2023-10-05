@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url ("https://jcenter.bintray.com")
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url ("https://jcenter.bintray.com")
+        }
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "ReadingBooks_Final"
+include ':app'

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/cover_details"
+            android:layout_width="140dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="6dp" />
+
+        <TextView
+            android:id="@+id/tv_title_book"
+            android:layout_width="210dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:autoSizeMaxTextSize="28sp"
+            android:autoSizeMinTextSize="24sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/josefin"
+            android:hint="@string/story_title"
+            android:textColor="@color/nau"
+            android:justificationMode="inter_word"
+            android:paddingStart="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/cover_details"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_author_book"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/ac"
+            android:hint="@string/author"
+            android:textColor="@color/nau"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toEndOf="@+id/cover_details"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_book" />
+
+        <TextView
+            android:id="@+id/tv_category_book"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/boder_create"
+            android:fontFamily="@font/ac"
+            android:gravity="center_vertical"
+            android:hint="@string/category"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/cover_details"
+            app:layout_constraintTop_toBottomOf="@+id/tv_author_book" />
+
+        <TextView
+            android:id="@+id/tv_status_book"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/boder_right"
+            android:fontFamily="@font/ac"
+            android:gravity="center_vertical"
+            android:hint="@string/status"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_category_book"
+            app:layout_constraintTop_toBottomOf="@+id/tv_author_book" />
+
+        <TextView
+            android:id="@+id/tv_description_book"
+            android:layout_width="350dp"
+            android:layout_height="482dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/background"
+            android:fontFamily="@font/sourceserifpro"
+            android:gravity="top"
+            android:hint="@string/story_description"
+            android:overScrollMode="always"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="12dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textColor="#000000"
+            android:textColorHint="#321919"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cover_details"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
